@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
+@keyframes ImageChange {
+  20%{
+      background-image: url(../Images/School_Ntanga.jpg);
+  }
+  40%{
+      background-image: url(../Images/Ntanga-1.jpg);
+  }
+  60%{
+      background-image: url(../Images/Ntanga-2.jpg);
+  }  
+  80%{
+      background-image: url(../Images/Ntanga-3.jpg);
+    }
+  100%{
+      background-image: url(../Images/Baby_Ntanga.jpg);
+    }    
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Bodoni Moda', serif;
+}
+.music{  
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Images/adult-birthday-party-ideas-.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+.container{
+    perspective: 1000px;
+}
+
+.card{
+  width: 280px;
+  height: 360px;
+  position: absolute;
+  top: 100px;
+  left: 230px;
+  cursor: pointer;
+  transition: all 2s ease-in-out;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.card:hover{
+  transform: rotateY(180deg);
+}
+.outside,.inside{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1.5rem;
+}
+.outside{
+  background-image: url(../Images/Baby_Ntanga.jpg);
+  background-position: center;
+  background-size: 100%;
+  box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
+  position: absolute;
+  backface-visibility: hidden;
+  animation: ImageChange 50s infinite ease-in-out;
+}
+.outside h1{
+  font-size: 3rem;
+  font-weight: bold;
+  color: salmon;
+  margin-bottom: 30px;
+}
+.inside{
+  box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.inside-video{
+  box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.movecursor{
+  width: 280px;
+  height: 360px;
+  position: absolute;
+  top: 100px;
+  right: 230px;
+  box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
+  object-fit: cover;
+  border-radius: 20px;
+}
+.movecursor p{
+  position: absolute;
+  width: 200px;
+  height: 315px;
+  top: 165px;
+  right: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: blanchedalmond;
+  margin-top: 20px;
+}
+.inside p{
+  position: absolute;
+  width: 200px;
+  height: 315px;
+  top: 165px;
+  left: 165px;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.block,.block1,.block2,.block3,.block4{
+    position: absolute;
+    top:200px;
+    right: 600px;
+    perspective: 800px;
+}
+.frames{
+  width: 450px;
+  height: 120px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0.8rem;
+  transform: rotateY(-230deg) rotateX(20deg);
+  position: absolute;
+}
+.frames img{
+  width: 125px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.frames p{
+ font-size: 20px;
+ font-family: 'Times New Roman', Times, serif;
+ font-weight: bold;
+ position: relative;
+ transform: rotateY(180deg);
+}
+.frames:nth-child(1){
+  top:-110px;
+  z-index: -1;
+  background-color: coral;
+}
+.frames:nth-child(2){
+  background-color: goldenrod;
+}
+.frames:nth-child(3){
+  top:100px;
+  background-color: burlywood;
+}
