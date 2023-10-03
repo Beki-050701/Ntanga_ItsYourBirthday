@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
 @keyframes ImageChange {
   20%{
-      background-image: url(../Images/School_Ntanga.jpg);
+      background-image: url(Images/School_Ntanga.jpg);
   }
   40%{
-      background-image: url(../Images/Ntanga-1.jpg);
+      background-image: url(Images/Ntanga-1.jpg);
   }
   60%{
-      background-image: url(../Images/Ntanga-2.jpg);
+      background-image: url(Images/Ntanga-2.jpg);
   }  
   80%{
-      background-image: url(../Images/Ntanga-3.jpg);
+      background-image: url(Images/Ntanga-3.jpg);
     }
   100%{
-      background-image: url(../Images/Baby_Ntanga.jpg);
+      background-image: url(Images/Baby_Ntanga.jpg);
     }    
 }
 *{
@@ -28,7 +28,7 @@
 }
 body{
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Images/adult-birthday-party-ideas-.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/adult-birthday-party-ideas-.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@ body{
   padding: 1.5rem;
 }
 .outside{
-  background-image: url(../Images/Baby_Ntanga.jpg);
+  background-image: url(Images/Baby_Ntanga.jpg);
   background-position: center;
   background-size: 100%;
   box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
