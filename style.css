@@ -33,7 +33,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(2px);
-    display: flex; /* the change*/
 }
 .container{
     perspective: 1000px;
@@ -49,7 +48,6 @@ body{
   transition: all 2s ease-in-out;
   transform-style: preserve-3d;
   perspective: 1000px;
-  display: flex; /* the change*/
 }
 .card:hover{
   transform: rotateY(180deg);
